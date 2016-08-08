@@ -1,0 +1,16 @@
+{
+  "name": "person",
+  "base": "User",
+  "idInjection": true,
+  "mixins": {
+    "SendVerificationEmail": {}
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
