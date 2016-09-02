@@ -6,18 +6,14 @@ var path=require('path'),
 var app = module.exports = loopback();
 
 // configure body parser
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
-//
-app.use(loopback.token());
-app.use(loopback.context())
+app.use(loopback.context());
 
 // configure view handler
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
-
 
 app.start = function() {
   // start the web server
@@ -31,6 +27,8 @@ app.start = function() {
     }
   });
 };
+
+app.af
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.

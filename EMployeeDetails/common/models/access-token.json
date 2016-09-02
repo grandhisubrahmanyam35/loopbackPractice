@@ -1,17 +1,10 @@
 {
-  "name": "person",
-  "base": "User",
+  "name": "accessToken",
+  "base": "AccessToken",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-    "SendVerificationEmail": {}
-  },
-  "remoteMethodsList": [
-    "login",
-    "logout"
-  ],
   "properties": {},
   "validations": [],
   "relations": {},

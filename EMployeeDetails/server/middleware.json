@@ -1,6 +1,8 @@
 {
   "initial:before": {
-    "loopback#favicon": {}
+    "loopback#favicon": {
+      "params":"./client/img/demo_favicon.png"
+    }
   },
   "initial": {
     "compression": {},
@@ -32,9 +34,7 @@
   },
   "session": {},
   "auth": {},
-  "parse": {
-
-  },
+  "parse": {},
   "routes": {
     "./middleware/first#first": {
       "paths": [

@@ -1,0 +1,29 @@
+{
+  "name": "settings",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": true,
+      "default": " "
+    },
+    "two_factor_secret": {
+      "type": "string",
+      "required": true,
+      "default": " "
+    },
+    "two_factor_enabled": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

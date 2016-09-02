@@ -1,0 +1,19 @@
+<p>Two enable Two-Factor Authentication, configure with any of the authentication apps like <b>Google Authenticator</b> or <b>oAuth</b></p>
+<br>
+<div>
+  <label>Secret : </label>
+  <label><%= two_factor_secret%></label>
+</div>
+
+<p>Verify two_factor_secret before Enable</p>
+
+<form action="/two_factor_verify" method="post">
+  <div>
+    <input name="token_input" type="text" placeholder="000000">
+    <input name="two_factor_secret" style="display: none;" type="text" value="<%= two_factor_secret%>">
+    <input name="email" type="text" style="display: none;" value="<%= email%>">
+  </div>
+  <div>
+    <input type="submit" value="verify"/>
+  </div>
+</form>

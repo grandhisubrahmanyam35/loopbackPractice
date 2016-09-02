@@ -1,0 +1,11 @@
+{
+  "local":{
+    "module":"passport-local",
+    "authScheme":"local",
+    "authPath":"/auth/local",
+    "successRedirect": "/loginSuccess",
+    "failureRedirect": "loginFailure",
+    "usernameField":"email",
+    "passwordField": "password"
+  }
+}

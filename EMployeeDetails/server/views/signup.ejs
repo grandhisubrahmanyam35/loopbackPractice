@@ -1,0 +1,22 @@
+<section>
+  <form action="/api/people" method="post">
+    <legend>Sign up form</legend>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" value="<%= email %>"/>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" value="<%= password %>"/>
+    </div>
+    <p>OR</p>
+    <div>
+      <a style="cursor: pointer" href="/auth/google"><img src="https://avatars0.githubusercontent.com/u/1342004?v=3&s=96" height="50px" width="50px"></a>
+      <a style="cursor: pointer"><img src="http://blog.addthiscdn.com/wp-content/uploads/2015/11/logo-facebook.png" height="50px" width="50px"></a>
+      <a style="cursor: pointer"><img src="https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png" height="50px" width="50px"></a>
+    </div>
+    <div>
+      <input type="submit" value="Sign up"/>
+    </div>
+  </form>
+</section>
